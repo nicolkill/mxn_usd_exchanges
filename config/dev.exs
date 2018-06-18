@@ -51,8 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :mxn_usd_exchange, MxnUsdExchange.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "nicolacosta",
+  password: "",
   database: "mxn_usd_exchange_dev",
   hostname: "localhost",
   pool_size: 10

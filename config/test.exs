@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :mxn_usd_exchange, MxnUsdExchange.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "nicolacosta",
+  password: "",
   database: "mxn_usd_exchange_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

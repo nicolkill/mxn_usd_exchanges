@@ -4,7 +4,7 @@ defmodule MxnUsdExchange.Mixfile do
   def project do
     [
       app: :mxn_usd_exchange,
-      version: "0.0.1",
+      version: "1.0.0",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -40,7 +40,10 @@ defmodule MxnUsdExchange.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:floki, "~> 0.20.0"},
+      {:httpotion, "~> 3.1.0"},
+      {:redix, ">= 0.0.0"}
     ]
   end
 

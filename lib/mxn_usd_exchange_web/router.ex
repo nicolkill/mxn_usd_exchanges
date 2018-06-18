@@ -13,10 +13,10 @@ defmodule MxnUsdExchangeWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", MxnUsdExchangeWeb do
-    pipe_through :browser # Use the default browser stack
+  scope "/api/v1", MxnUsdExchangeWeb do
+    pipe_through :api
 
-    get "/", PageController, :index
+    get "/mxn_to_usd", PageController, :index
   end
 
   # Other scopes may use custom stacks.
